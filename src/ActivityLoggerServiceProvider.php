@@ -2,13 +2,13 @@
 
 namespace CodeHunger\LaravelActivityLogger;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
-use LaravelActivityLogger\Listeners\LogListener;
-use LaravelActivityLogger\Commands\CleanupActivityLogs;
+use Illuminate\Support\ServiceProvider;
+use CodeHunger\LaravelActivityLogger\Listeners\LogListener;
+use CodeHunger\LaravelActivityLogger\Commands\CleanupActivityLogs;
 
 class ActivityLoggerServiceProvider extends ServiceProvider
 {
